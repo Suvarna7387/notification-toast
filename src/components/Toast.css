@@ -1,0 +1,115 @@
+
+.toast {
+    background-color: #4acb5b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Add margin between toasts */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .toast-container {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column-reverse; /* Stack toasts in reverse order */
+  }
+  
+  .toast.visible {
+    opacity: 1;
+  }
+  
+.centered-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+.button-style {
+    margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #719fcf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.each-Country_name{
+    margin-bottom: 10px;
+}
+/* Add this style to your existing CSS or create a new CSS file */
+.button-style-pagination {
+    background-color: #4caf50; /* Green background color */
+    border: none; /* Remove border */
+    color: white; /* White text color */
+    padding: 10px 15px; /* Add padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block;
+    font-size: 16px; /* Set font size */
+    margin: 4px 2px; /* Add margin between buttons */
+    cursor: pointer; /* Add cursor on hover */
+    border-radius: 5px; /* Add border radius for rounded corners */
+  }
+  
+  /* Add a different color for the disabled state */
+  .button-style-pagination[disabled] {
+    background-color: #ccc; /* Grey background color for disabled state */
+    cursor: not-allowed; /* Change cursor to not-allowed */
+  }
+  
+  /* Optional: Style for the page number */
+  span.page-number {
+    font-size: 18px; /* Set font size for the page number */
+    margin: 0 10px; /* Add margin around the page number */
+  }
+  
+.country-names-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+.input-style {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 300px;
+    box-sizing: border-box;
+  }
+  .input-style:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.7);
+  }
+.toast-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+  
+  
+  .toast.hidden {
+    opacity: 0;
+  }
+  
+  .toast span {
+    margin-right: 10px;
+  }
+  
+  .toast button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  

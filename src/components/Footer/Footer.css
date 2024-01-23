@@ -1,0 +1,13 @@
+/* Footer.css */
+.Footer {
+    background-color: #ccc; /* Gray background color */
+    height: 50px; /* Height of the footer */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
