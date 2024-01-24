@@ -1,4 +1,3 @@
-// Toast.js
 import React, { useEffect, useState } from 'react';
 import './Toast.css';
 
@@ -18,7 +17,7 @@ const Toast = ({ message, onClose,index }) => {
     const timer = setTimeout(() => {
       setVisible(false);
       onClose();
-    }, 7000); // Use a minimal delay when clearing the timer
+    }, 7000); 
     clearTimeout(timer);
     onClose();
   };

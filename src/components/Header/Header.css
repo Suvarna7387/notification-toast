@@ -1,4 +1,3 @@
-/* Header.css */
 .Left-Header {
     color: white;
     display: flex;
@@ -15,7 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    flex-wrap: wrap; 
   }
   
   .right_header {
@@ -28,25 +27,24 @@
   
   .right_header > div {
     margin-right: 20px;
-    font-size: 16px; /* Adjust font size for "First Component," "Second Component," and "Third Component" */
+    font-size: 16px; 
   }
   
-  /* Hide Left-Header in tab view */
   @media (max-width: 768px) {
     .Left-Header {
-      display: none; /* Hide Left-Header in tab view */
+      display: none; 
     }
   
     .right_header {
-      order: 1; /* Move right_header to the top on smaller screens */
+      order: 1; 
       justify-content: center;
-      flex-wrap: nowrap; /* Prevent items from wrapping in right_header */
+      flex-wrap: nowrap; 
     }
   
     .right_header > div {
       margin-right: 0;
-      margin-bottom: 10px; /* Add spacing between items on smaller screens */
-      font-size: 14px; /* Decrease font size for smaller screens */
+      margin-bottom: 10px; 
+      font-size: 14px; 
     }
   }
 
@@ -55,9 +53,8 @@
     cursor: pointer;
   }
   
-  /* Style for the active component */
   .right_header div.active {
-    background-color: #4caf50; /* Green background color */
-    color: white; /* White text color */
+    background-color: #4caf50; 
+    color: white; 
   }
   

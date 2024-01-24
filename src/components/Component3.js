@@ -1,4 +1,3 @@
-// Component3.js
 import React, { useState, useEffect } from 'react';
 import Toast from './Toast';
 
@@ -48,7 +47,6 @@ const Component3 = () => {
       setCountries(countryNames);
       setApiError(false);
       setApiResponseReceived(true);
-      // Hide the Toast Message when API response is received
       setToasts([]);
     } catch (error) {
       console.error('Error making API call:', error);

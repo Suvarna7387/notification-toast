@@ -1,4 +1,3 @@
-// Component2.js
 import React, { useState } from 'react';
 import Toast from './Toast';
 
@@ -8,7 +7,7 @@ const Component2 = () => {
 
   const addToast = (message) => {
     const newToasts = [...toasts, message];
-    setToasts(newToasts.slice(-3)); // Keep only the latest 3 toasts
+    setToasts(newToasts.slice(-3)); 
   };
 
   const removeToast = (index) => {
@@ -20,11 +19,11 @@ const Component2 = () => {
   const handleClick = () => {
     if (inputValue.trim() === '') {
       alert('Please enter custom text.');
-      return; // Don't proceed further if the input is empty
+      return; 
     }
 
     addToast(inputValue);
-    setInputValue(''); // Clear the input after adding the toast
+    setInputValue(''); 
   };
 
   return (
