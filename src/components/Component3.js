@@ -96,6 +96,7 @@ const Component3 = () => {
             key={index}
             message={toast.message}
             onClose={() => removeToast(index)}
+            time={inputValue}
           />
         ))}
       </div>

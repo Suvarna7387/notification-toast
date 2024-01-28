@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import './Toast.css';
 
-const Toast = ({ message, onClose,index }) => {
+const Toast = ({ message, onClose,index,time   }) => {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setVisible(false);
       onClose();
-    }, 7000);
+    }, time * 1000); 
 
     return () => clearTimeout(timer);
-  }, [onClose]);
+  }, [onClose, time]);
 
   const handleMouseEnter = () => {
     const timer = setTimeout(() => {
